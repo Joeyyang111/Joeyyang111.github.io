@@ -4,14 +4,16 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 	<style type="text/css">
-	body, html,#containers {width: 100%;height: 100%;overflow: hidden;margin:0;font-family:"微软雅黑";}
+	html{height:100%}
+        body{height:100%;margin:0px;padding:0px}
+        #containers{height:100%}
 	</style>
 	<script src="https://api.map.baidu.com/api?v=2.0&&type=webgl&ak=fHecfmYdTGstiIIM3CAFDZ1iYUwgcqbc"></script>
 	<title>My hometown</title>
 </head>
 <body>
 	<div id="containers"></div>
-    <script type="text/javascript">
+        <script type="text/javascript">
 
 	var map = new BMapGL.Map("containers");    // 创建Map实例
 	var point = new BMapGL.Point(114.65, 33.62);
