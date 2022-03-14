@@ -22,13 +22,16 @@
     var content =
 "<center><h4 style='margin:0 0 5px 0;padding:0.2em 0'>周口</h4></center>" +
 "<img style='float:right;margin:4px' id='imgDemo' src='laotzu.jpg' width='200' height='104' title='老子故里'/>"  +
-"<a style='color:#1C2B35;text-decoration:none;' href='https://baike.baidu.com/item/%E5%91%A8%E5%8F%A3/139270'>click it for more information</a>"
+"<a style='color:#1C2B35;text-decoration:none;' href='https://baike.baidu.com/item/%E5%91%A8%E5%8F%A3/139270'>更多信息见百度百科</a>"
 "</div>";
 
-var infoWindow = new BMapGL.InfoWindow(content);     // marker添加点击事件
-	marker.addEventListener('click', function () {
-   		 this.openInfoWindow(infoWindow);
-});
+var opts = {
+        width: 200,     // 信息窗口宽度
+        height:180,     // 信息窗口高度
+        title: ""  // 信息窗口标题
+    }
+var infoWindow = new BMapGL.InfoWindow(content,opts);     // marker添加点击事件
+map.openInfoWindow(infoWindow, map.getCenter());      // 打开信息窗口
 
 </script>
 </body>
