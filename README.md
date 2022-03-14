@@ -9,7 +9,7 @@
             height: 400px;
         }
     </style>
-    <script src="https://api.map.baidu.com/api?v=1.0&&type=webgl&ak=fHecfmYdTGstiIIM3CAFDZ1iYUwgcqbc"></script>
+    <script src="https://api.map.baidu.com/api?v=2.0&&type=webgl&ak=fHecfmYdTGstiIIM3CAFDZ1iYUwgcqbc"></script>
 </head>
 <body>
     <center>
